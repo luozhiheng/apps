@@ -70,7 +70,7 @@ fragment TaxBase on TaxableObject {
     ... on Order {
       avataxEntityCode: metafield(key: "avataxEntityCode")
       user {
-        id
+        ...User
       }
     }
   }
